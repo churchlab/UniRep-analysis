@@ -9,9 +9,9 @@ Step 1: Downdload data & install conda (a python package manager that will insta
 ```
 mkdir data
 cd data
-wget PATH_TO_DATA_ON_AWS
-tar -zxvf ARCHIVE-NAME # this may take some time
-rm ARCHIVE-NAME
+wget https://s3.us-east-2.amazonaws.com/unirep-data-storage/unirep_analysis_data_part2.tar.gz
+tar -zxvf unirep_analysis_data_part2.tar.gz # this may take some time
+rm unirep_analysis_data_part2.tar.gz
 cd ..
 
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
