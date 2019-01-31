@@ -22,12 +22,18 @@ At this step one may need to restart the gterminal to be able to use the newly i
 
 
 
-Step 2: Clone the github repo with analysis code and create a conda environment including all the necessary packages to execute analysis
+Step 2: Clone the github repo with analysis code and create a conda environment including all the necessary packages to execute analysis, add the second part of the data
 ```
 git clone https://github.com/churchlab/UniRep-analysis.git
 cd UniRep-analysis
 conda env create -f ./yml/grig_alldatasets_run.yml
 source activate grig_alldatasets_run
+mkdir data
+cd data
+wget https://s3.amazonaws.com/unirep-public/unirep_analysis_data.zip
+unzip unirep_analysis_data.zip
+rm unirep_analysis_data.zip
+cd ..
 ```
 ______________________________________________________
 
