@@ -8,6 +8,7 @@ git clone https://github.com/churchlab/UniRep-analysis.git
 
 # Requirements
 python: 3.5.2
+
 For reference on how to install, see https://askubuntu.com/questions/682869/how-do-i-install-a-different-python-version-using-apt-get
 
 venv with necessary requirements, can be installed with:
@@ -59,6 +60,7 @@ To re-generate all the figures in the main text, one should execute jupyter/ipyt
 To run a notebook, do the following:
 
 Activate the right environment (as noted in the Project Structure section for each notebook):
+
 For grig_alldatasets_run:
 ```
 source activate grig_alldatasets_run
@@ -72,7 +74,7 @@ For venv:
 source venv/bin/activate
 ```
 
-Than execute:
+Then execute:
 ```
 jupyter notebook
 ```
