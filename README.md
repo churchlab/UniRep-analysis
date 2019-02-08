@@ -137,6 +137,11 @@ mkdir models # folder for trained models
 mkdir params # folder for recording best parameters after hyperparameter search 
 ```
 
+Activate the right environment:
+```
+source activate grig_alldatasets_run
+```
+
 To run SCOP 1.67 Superfamily Remote Homology Detection and SCOP 1.67 Fold-level Similarity Detection with Random Forest, execute:
 ```
 python FINAL_run_RF_homology_detection.py
