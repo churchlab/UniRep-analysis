@@ -51,6 +51,50 @@ cd ..
 ```
 
 # Project Structure
+```
+.
+├── analysis
+│   ├── analysis_unsupervised_clustering_oxbench_homstrad.ipynb # ethan_analysis
+│   ├── FINAL_compute_std_by_val_resampling.py # grig_alldatasets_run
+│   ├── FINAL_run_l1_regr_quant_function_stability_and_supp_analyses.py # grig_alldatasets_run
+│   ├── FINAL_run_RF_homology_detection.py # grig_alldatasets_run
+│   └── FINAL_run_transfer_analysis_function_prediction__stability.py # grig_alldatasets_run
+├── figures
+│   ├── figure2
+│   │   ├── fig_1a.ipynb # ethan_analysis
+│   │   ├── fig2b_supp_fig2_upper.ipynb # ethan_analysis
+│   │   ├── fig2c.ipynb # ethan_analysis
+│   │   ├── fig2e_supp_fig4-5.ipynb # ethan_analysis
+│   │   ├── FINAL_Fig2d_AND_SupTableS2_Homology_detection.ipynb # grig_alldatasets_run
+│   │   ├── FINAL_Fig2g_alpha-beta_neuron.ipynb # grig_alldatasets_run
+│   │   ├── supp_fig2.ipynb # ethan_analysis
+│   │   └── supp_fig3.ipynb # ethan_analysis
+│   ├── figure3
+│   │   ├── fig3b.ipynb # ethan_analysis
+│   │   ├── fig3c.ipynb # ethan_analysis
+│   │   ├── FINAL_Fig_3a_Rosetta_comparison.ipynb # grig_alldatasets_run
+│   │   ├── FINAL_Fig3e_Quant_function_prediction_Fig3b_stability_ssm2_significance_SuppTableS4-5.ipynb # grig_alldatasets_run
+│   │   └── supp_fig8.ipynb # ethan_analysis
+│   ├── figure4 
+│   │   ├── A007h_budget_constrained_functional_sequence_recovery_analysis.ipynb # venv
+│   │   ├── A007j_pred_v_actual_fpbase_plots.ipynb # venv
+│   │   ├── A008c_visualize_ss_feature_predictors_on_protein.ipynb # venv
+│   │   ├── common.py
+│   │   ├── supp_fig10a_partial_and_e.ipynb # ethan_analysis
+│   │   ├── supp_fig10a_partial_and_f.ipynb # ethan_analysis
+│   │   ├── supp_fig10b-d_left.ipynb # ethan_analysis
+│   │   ├── supp_fig10b-d_right.ipynb # ethan_analysis
+│   │   └── supp_fig_10g_10h.ipynb # venv
+│   └── other
+│       ├── FINAL_supp_data_3_2_1__supp_fig_S9__Supp_fig_s12.ipynb # grig_alldatasets_run
+│       ├── FINAL_SuppFigS1_Seq_db_growth.ipynb # grig_alldatasets_run
+│       └── supp_fig13.ipynb # ethan_analysis
+├── common
+├── common_v2
+├── README.md
+├── venv_requirements
+└── yml
+```
 
 # Usage
 ## Reproducing figures
