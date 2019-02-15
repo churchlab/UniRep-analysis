@@ -41,10 +41,12 @@ cd data
 
 wget https://s3.us-east-2.amazonaws.com/unirep-data-storage/unirep_analysis_data_part2.tar.gz
 tar -zxvf unirep_analysis_data_part2.tar.gz # this may take some time
+mv data/* ./
 rm unirep_analysis_data_part2.tar.gz
 
 wget https://s3.amazonaws.com/unirep-public/unirep_analysis_data.zip
-unzip unirep_analysis_data.zip
+unzip unirep_analysis_data.zip # may need to install unzip with sudo apt install unzip
+mv unirep_analysis_data/* ./
 rm unirep_analysis_data.zip
 
 cd ..
