@@ -20,6 +20,8 @@ sys.path.append('../')
 from common_v2.validation_tools import subsets, regr_datasets, pearson, reps, none_model_reps, metrics, tvt_modifier_baseline_reps, tvt_modifier_return_mean
 import common_v2.validation_tools as validation_tools
 
+from sklearn.model_selection import KFold
+
 path_to_pieces = f"../../data/pieces_new/"
 run_type='test'
 
@@ -80,12 +82,15 @@ for d in regr_datasets:
                 model_fname = f"./models/{d}__{s}__{rep}__model.pkl"
 
                 if to_train == True:
+            
+                    kfold = KFold(n_splits=10, random_state=42, shuffle=True)
+     
                     model_to_pass = LassoLarsCV(
                                             fit_intercept = True,
                                             normalize = True,
                                             n_jobs=-1,
                                             max_n_alphas=6000,
-                                            cv=10
+                                            cv=kfold
                                         )
                 else:
                     model_to_pass = joblib.load(model_fname)
