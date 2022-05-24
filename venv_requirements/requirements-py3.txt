@@ -9,6 +9,6 @@ scikit-image==0.13.0
 scikit-learn==0.18.1
 scipy==0.19.1
 seaborn==0.8.1
-tensorflow==1.2.1
+tensorflow==2.6.4
 tflearn==0.3.2
 nglview==1.1.7
